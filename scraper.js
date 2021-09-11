@@ -1,14 +1,14 @@
 // ! can scrape https://www.tgju.org/archive/price_dollar_rl or any other currencies' archive on this website
-pages = document.querySelector("#DataTables_Table_0_paginate > span > a:nth-child(7)").innerText - 3
 a = []
+pages = document.querySelector("#DataTables_Table_0_paginate > span > a:nth-child(7)").innerText - 3
 ii = 31 * pages // one more than rows
 jj = 31 * pages
+v = 0
 for (i = 0; i < ii; i++) {
     for (j = 0; j < jj; j++) {
         if (!a[i]) a[i] = []
     }
 }
-v = 0
 delayedGreeting();
 copy(a)
 function sleep(ms) {
@@ -52,6 +52,4 @@ async function delayedGreeting() {
         }
 
     }
-    // console.log("here")
-    // document.querySelector("#DataTables_Table_0_paginate > span > a:nth-child(4)").click()
 }
