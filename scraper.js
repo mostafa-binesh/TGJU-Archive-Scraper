@@ -56,8 +56,6 @@ async function delayedGreeting() {
     if (b > pages) {
         lastpages()
     }
-    // console.log("here")
-    // document.querySelector("#DataTables_Table_0_paginate > span > a:nth-child(4)").click()
 }
 async function lastpages() {
     console.log("pashm runned")
